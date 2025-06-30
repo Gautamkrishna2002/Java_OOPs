@@ -21,8 +21,13 @@ public class Equals {
 		System.out.println(ref1 == ref2);
 		System.out.println(ref1.equals(ref2));
 		System.out.println("End of Main");
-		
-
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		Equals ref = (Equals) obj;
+		return this.id == ref.id && this.name == ref.name;
+	}
+	
 
 }
